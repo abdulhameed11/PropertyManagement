@@ -1,0 +1,58 @@
+<!doctype html>
+<html><head>
+    <style>
+     input[type=text], input[type=password] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+      }
+    
+    body {
+        
+            background: #fcfefe url(back.jpg) no-repeat padding-box top border-box;
+       width:100%;
+      
+         }
+      
+</style>
+</head>
+
+<body>
+<div>
+<h4 style="color: #4CAF50;text-decoration: aqua">FROM</h4><input type="text" style="background-color: azure;text-decoration-color:black"/>
+
+
+
+</div>
+<div>
+<h4>To</h4><input type="text" style="background-color: azure;text-decoration-color:black"/>
+
+</div>
+<div><button type="submit">CHANGE OWNER</button></div>
+
+<script>
+if(typeof web3!=='undefined'){
+
+web3=new web3(web3.currentProvider);
+}else{
+
+
+    web3=new web3(new web3.currentProvider("http://localhost:8545"));
+}
+
+
+
+
+
+
+
+</script><>
+
+
+</body>
+
+
+    </html>
