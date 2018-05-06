@@ -1,0 +1,281 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+<style>
+
+ body {
+        
+            background: #fcfefe url(propertyback.jpg) no-repeat padding-box top border-box;
+       width:100%;
+      
+         
+       
+        }
+
+      
+
+        a {
+            color:navy;
+            font-size: 35px;
+            text-decoration:solid;
+            font-family: TechnicBold;
+        padding-left:20px;
+            }
+
+    
+    </style>
+ 
+  
+    <script src="jquery-3.2.1.min.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $(".menu").mouseover(function () {
+
+                $(this).css("background-color", "orange");
+
+
+
+            });
+
+
+
+            $(".menu").mouseout(function () {
+
+                $(this).css("background", "grey")
+
+
+            });
+
+
+            $(".menu").mousover(function () {
+
+                $("#div").show();
+
+            });
+
+            $(".menu").mouseout(function () {
+                $("#div2").hide();
+
+            })
+        });
+
+     </script>
+    </head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    <form id="form2" runat="server">
+  
+          <table style="background-color:grey; opacity:0.9;" >
+    <tr >
+        <td  >
+            <table >
+                <!--table in   ACADEMICS-->
+
+                <tr style="width:1%">
+                    <td class="menu" >
+
+                        <ul >
+
+                            <li id="academic"> <b><a href="academics.aspx" style="padding-right:40px">Academics</a></b></li>
+
+</ul>
+
+                    </td>
+                </tr>
+       
+            
+               </table>
+        </td>
+
+
+        <td>
+            <table       >  <!--table in   Courses   -->
+                <tr>
+                    <td class="menu">
+                        <ul >
+                            <li><b><a href="courses.html" style="padding-right:40px">Courses</a></b>
+                               
+
+
+
+                               </li>
+
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </td>
+
+
+
+
+        <td>
+            <table       >  <!--table in-->
+                <tr>
+                    <td class="menu">
+                        <ul >
+                            <li><b><a href="Home.aspx" style="padding-right:40px">Home</a></b></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+
+        <td style="width:80%"  height:100%>
+            <table   >   <!--table in-->
+                <tr>
+                    <td class="menu">
+                        <ul >
+
+                            <li><b><a href="Contact.aspx" style="padding-right:40px">Contact</a></b></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+
+        
+        
+        
+     
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </td>
+
+    
+    
+     <td style="width:50%"  height:100%>
+            <table   >   <!--table in-->
+                <tr>
+                    <td class="menu">
+                        <ul >
+
+                            <li><b><a href="setting.aspx" style="padding-right:40px">Setting</a></b></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+
+        
+        
+        
+     
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </td>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </tr>
+           </table>
+  
+     
+
+    
+    
+        
+        <div style="width:100px; height:200%; background-color:blue"></div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    
+    
+  
+    
+    
+    
+    
+    </form>
+
+        
+        
+        
+        
+        
+        
+         <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
